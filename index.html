@@ -4,8 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Album Finder</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
 </head>
 <body>
-    
+    <section id="landing__page">
+        <nav>
+            <div class="nav__contents">
+                <figure>
+                    <img src="./assets/site_logo.png" alt="" class="site__logo">
+                </figure>
+                <ul class="nav__link--list">
+                    <li class="nav__link">                            
+                        <a href="#" class="nav__link--anchor">
+                            Home 
+                        </a>
+                    </li>
+                    <li class="nav__link">
+                        <a href="#" class="nav__link--anchor">
+                            Find Music
+                        </a>
+                    </li>
+                    <li class="nav__link">
+                        <a href="#" class="nav__link--contact">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav__search">
+                <h2 class="search__title">Browse Albums</h2>
+                <form onsubmit="contact(event)" id="search__form">
+                    <input type="text" placeholder="Search by Artist, Genre, or Release Year" name="search_term" class="search__bar"></input>
+                    <i class="fas fa-search"></i>
+                </form>
+            </div>
+        </nav>
+        <figure class="banner">
+            <img src="./assets/banner.jpg" alt="" class="banner__image">
+        </figure>
+        <div class="nav__wrapper">  
+        </div>
+
+        <header>
+            <div class="results__bar">
+                <h4 class="results__title">Search results:</h4>
+                <div class="results__slider">
+                    <h4 class="results__slider--title">
+                        Year: 1950-2024
+                    </h4>
+                    <div class="slider">
+                        
+                    </div>
+                </div>
+            </div>
+        </header>
+    </section>
 </body>
 </html>
